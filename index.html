@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio Homework Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container global-header-container">
+        <a class="logo" href="index.html"
+          >Web<span class="logo-header">Studio</span>
+        </a>
+
+        <!-- Website-navigation: only on tablet, desktop version  -->
+        <nav class="website-navigation">
+          <ul>
+            <li>
+              <a class="active navigation-link current-file" href="index.html"
+                >Studio
+              </a>
+            </li>
+            <li>
+              <a class="active navigation-link" href="portfolio.html"
+                >Portfolio
+              </a>
+            </li>
+            <li>
+              <a class="active navigation-link" href="mobile.html"
+                >Mobile
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Contacts-list-header: only on tablet, desktop version  -->
+        <div class="contacts-list-header">
+          <a
+            class="active contact-link-header"
+            href="mailto:info@devstudio.com"
+          >
+            <svg class="mail-icon">
+              <use href="images/icons/icons.svg#icon-envelope"></use>
+            </svg>
+            <span class="contact-link-text">info@devstudio.com</span>
+          </a>
+
+          <a class="active contact-link-header" href="tel:+1212-772-4150">
+            <svg class="phone-icon">
+              <use href="images/icons/icons.svg#icon-smartphone"></use>
+            </svg>
+            <span class="contact-link-text">+1 212-772-4150</span>
+          </a>
+        </div>
+
+        <!-- Menu-button: only on mobile version -->
+        <button type="button" class="open-menu-button js-open-menu active">
+          <svg width="40px" height="40px">
+            <use href="images/icons/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Hero-section -->
+      <section>
+        <div class="container hero-section">
+          <div class="hero-content">
+            <h1 class="hero-heading">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+            <button class="cta-button button" type="button" data-modal-open>
+              Request our service
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPANY ADVANTAGES SECTION -->
+      <section>
+        <div class="container company-advantages-container">
+          <div class="company-advantage-card">
+            <div class="advantage-card-icon">
+              <svg width="70px" height="70px">
+                <use href="images/icons/icons.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <div class="advantage-card-description">
+              <h4>ATTENTION TO DETAILS</h4>
+              <p>
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
+            </div>
+          </div>
+          <div class="company-advantage-card">
+            <div class="advantage-card-icon">
+              <svg width="70px" height="70px">
+                <use href="images/icons/icons.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <div class="advantage-card-description">
+              <h4>PUNCTUALITY</h4>
+              <p>
+                With us, you can feel safe and secure. An important principle of
+                the company: respect your time and deadlines.
+              </p>
+            </div>
+          </div>
+          <div class="company-advantage-card">
+            <div class="advantage-card-icon">
+              <svg width="70px" height="70px">
+                <use href="images/icons/icons.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <div class="advantage-card-description">
+              <h4>PLANNING</h4>
+              <p>
+                You will be able to observe and participate in every phase of
+                solution development and implementation.
+              </p>
+            </div>
+          </div>
+          <div class="company-advantage-card">
+            <div class="advantage-card-icon">
+              <svg width="70px" height="70px">
+                <use href="images/icons/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <div class="advantage-card-description">
+              <h4>MODERN TECHNOLOGIES</h4>
+              <p>
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+      <!-- COMPANY SERVICIES SECTION: only on desktop version -->
+      <section class="company-servicies-section">
+        <div class="container company-servicies-container">
+          <h2 class="section-heading">What we do</h2>
+          <div class="company-services-list">
+            <div class="company-service-card">
+              <div>
+                <img 
+                srcset="./images/company-services/desktop-apps.jpg 1x, ./images/company-services/desktop-apps-2x.jpg 2x"
+                src="./images/company-services/desktop-apps.jpg"
+                alt="desktop apps"
+                >
+              </div>
+              <div class="overlay-box">
+                <h4 class="overlay-text">desktop apps</h4>
+              </div>
+            </div>
+
+            <div class="company-service-card">
+              <div>
+                <img 
+                srcset="./images/company-services/mobile-apps.jpg 1x, ../images/company-services/mobile-apps-2x.jpg 2x"
+                src="./images/company-services/mobile-apps.jpg"
+                alt="mobile apps"
+                >
+              </div>
+              <div class="overlay-box">
+                <h4 class="overlay-text">mobile apps</h4>
+              </div>
+            </div>
+
+            <div class="company-service-card">
+              <div>
+                <img 
+                srcset="./images/company-services/design-solutions.jpg 1x, ./images/company-services/design-solutions-2x.jpg 2x"
+                src="./images/company-services/design-solutions.jpg"x
+                alt="design solutions"
+                >
+              </div>
+              <div class="overlay-box">
+                <h4 class="overlay-text">design solutions</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPANY TEAM SECTION -->
+      <section>
+        <div class="container company-team-container">
+          <h2 class="section-heading">Our Team</h2>
+          <div class="company-employees">
+            <div class="company-employee-card">
+              
+              <picture class="employee-photo">
+                <!-- Desktop -->
+                <source 
+                  media="(min-width: 1158px) and (max-width: 1600px)"
+                  srcset="./images/company-employees/christopher-walker/christopher-walker-d.jpg 1x, ./images/company-employees/christopher-walker/christopher-walker-d-2x.jpg 2x"
+                >
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px) and (max-width: 1158px)"
+                  srcset="./images/company-employees/christopher-walker/christopher-walker-t.jpg 1x, ./images/company-employees/christopher-walker/christopher-walker-t-2x.jpg 2x"
+                >
+
+                <!-- Mobile -->
+                <source
+                  media="(min-width: 480px) and (max-width: 768px)"
+                  srcset="./images/company-employees/christopher-walker/christopher-walker-m.jpg 1x, ./images/company-employees/christopher-walker/christopher-walker-m-2x.jpg 2x"
+                >
+
+                <img
+                  src="./images/company-employees/christopher-walker/christopher-walker-m.jpg"
+                  alt="Christopher Walker"
+                >
+              </picture>
+                      
+              <h4 class="employee-name">Christopher Walker</h4>
+              <p class="employee-position">Product Designer</p>
+
+              <div class="employee-socials-list">
+                <a
+                  class="employee-social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="company-employee-card">
+              <picture class="employee-photo">
+                <!-- Desktop -->
+                <source 
+                  media="(min-width: 1158px) and (max-width: 1600px)" 
+                  srcset="./images/company-employees/kylie-evans/kylie-evans-d.jpg 1x, ./images/company-employees/kylie-evans/kylie-evans-d-2x.jpg 2x"
+                >
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px) and (max-width: 1158px)"
+                  srcset="./images/company-employees/kylie-evans/kylie-evans-t.jpg 1x, ./images/company-employees/kylie-evans/kylie-evans-t-2x.jpg 2x"
+                >
+
+                <!-- Mobile -->
+                <source
+                  media="(min-width: 480px) and (max-width: 768px)"
+                  srcset="./images/company-employees/kylie-evans/kylie-evans-m.jpg 1x, ./images/company-employees/kylie-evans/kylie-evans-m-2x.jpg 2x"
+                >
+
+                <img
+                  src="./images/company-employees/kylie-evans/kylie-evans-m.jpg"
+                  alt="Kylie Evans"
+                >
+              </picture>
+                      
+              <h4 class="employee-name">Kylie Evans</h4>
+              <p class="employee-position">Frontend Developer</p>
+
+              <div class="employee-socials-list">
+                <a
+                  class="employee-social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="company-employee-card">
+              <picture class="employee-photo">
+                <!-- Desktop -->
+                <source 
+                  media="(min-width: 1158px) and (max-width: 1600px)" 
+                  srcset="./images/company-employees/ryan-harris/ryan-harris-d.jpg 1x, ./images/company-employees/ryan-harris/ryan-harris-d-2x.jpg 2x"
+                >
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px) and (max-width: 1158px)"
+                  srcset="./images/company-employees/ryan-harris/ryan-harris-t.jpg 1x, ./images/company-employees/ryan-harris/ryan-harris-t-2x.jpg 2x"
+                >
+
+                <!-- Mobile -->
+                <source
+                  media="(min-width: 480px) and (max-width: 768px)"
+                  srcset="./images/company-employees/ryan-harris/ryan-harris-m.jpg 1x, ./images/company-employees/ryan-harris/ryan-harris-m-2x.jpg 2x"
+                >
+
+                <img
+                  src="./images/company-employees/ryan-harris/ryan-harris-m.jpg"
+                  alt="Ryan Harris"
+                >
+              </picture>
+                      
+              <h4 class="employee-name">Ryan Harris</h4>
+              <p class="employee-position">Marketing</p>
+
+              <div class="employee-socials-list">
+                <a
+                  class="employee-social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="company-employee-card">
+              <picture class="employee-photo">
+                <!-- Desktop -->
+                <source 
+                  media="(min-width: 1158px) and (max-width: 1600px)" 
+                  srcset="./images/company-employees/tyler-moore/tyler-moore-d.jpg 1x, ./images/company-employees/tyler-moore/tyler-moore-d-2x.jpg 2x"
+                >
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px) and (max-width: 1158px)"
+                  srcset="./images/company-employees/tyler-moore/tyler-moore-t.jpg 1x, ./images/company-employees/tyler-moore/tyler-moore-t-2x.jpg 2x"
+                >
+
+                <!-- Mobile -->
+                <source
+                  media="(min-width: 480px) and (max-width: 768px)"
+                  srcset="./images/company-employees/tyler-moore/tyler-moore-m.jpg 1x, ./images/company-employees/tyler-moore/tyler-moore-m-2x.jpg 2x"
+                >
+
+                <img
+                  src="./images/company-employees/tyler-moore/tyler-moore-m.jpg"
+                  alt="Tyler Moore"
+                >
+              </picture>
+                      
+              <h4 class="employee-name">Tyler Moore</h4>
+              <p class="employee-position">UI Designer</p>
+
+              <div class="employee-socials-list">
+                <a
+                  class="employee-social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a
+                  class="employee-social-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="images/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPANY CUSTOMERS SECTION -->
+      <section>
+        <div class="container company-customers-container">
+          <h2 class="section-heading">Regular Customers</h2>
+          <div class="customers-list">
+            <a
+              class="customer-card"
+              href="https://goit.global/ro/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="images/icons/icons.svg#icon-logo_company_1"></use>
+              </svg>
+            </a>
+            <a
+              class="customer-card"
+              href="https://goit.global/ro/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="images/icons/icons.svg#icon-logo_company_2"></use>
+              </svg>
+            </a>
+            <a
+              class="customer-card"
+              href="https://goit.global/ro/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="images/icons/icons.svg#icon-logo_company_3"></use>
+              </svg>
+            </a>
+            <a
+              class="customer-card"
+              href="https://goit.global/ro/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="images/icons/icons.svg#icon-logo_company_4"></use>
+              </svg>
+            </a>
+            <a
+              class="customer-card"
+              href="https://goit.global/ro/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="images/icons/icons.svg#icon-logo_company_5"></use>
+              </svg>
+            </a>
+            <a
+              class="customer-card"
+              href="https://goit.global/ro/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="images/icons/icons.svg#icon-logo_company_6"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container global-footer-container">
+        <div class="logo-and-address-plus-finds-us-container">
+          <div class="logo-and-address">
+            <a class="logo" href="index.html"
+              >Web<span class="logo-footer">Studio</span>
+            </a>
+            <address>
+              <ul class="company-address-list">
+                <li>
+                  <a
+                    class="active location-link-footer"
+                    href="https://goo.gl/maps/exF3Ppo8LG7MDVbv6"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    >695 Park Ave, NY 10065, USA
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="active contact-link-footer"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com
+                  </a>
+                </li>
+                <li>
+                  <a class="active contact-link-footer" href="tel:+1212-772-4150"
+                    >+1 212-772-4150
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="finds-us-container">
+            <h4 class="finds-us-heading">Find us on</h4>
+            <div class="footer-socials">
+              <a
+                class="link-icon"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg width="20px" height="20px">
+                  <use href="images/icons/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a class="link-icon" href="https://twitter.com/" target="_blank">
+                <svg width="20px" height="20px">
+                  <use href="images/icons/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a
+                class="link-icon"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg width="20px" height="20px">
+                  <use href="images/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a
+                class="link-icon"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              >
+                <svg width="20px" height="20px">
+                  <use href="images/icons/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="subscribe-form-container">
+          <h4 class="subscribe-form-caption">Subscribe to the newsletter</h4>
+          <form class="subscribe-form">
+            <label class="subscribe-label">
+              <input
+                class="subscribe-form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="button subscribe-button" type="submit">
+              Subscribe
+              <svg width="24px" height="24px">
+                <use href="images/icons/icons.svg#icon-send_input_footer"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MENU-DRAWER: only on mobile version -->
+    <div class="js-menu-container">
+      <button class="close-menu-button js-close-menu active" type="button">
+        <svg width="40px" height="40px">
+          <use href="images/icons/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="menu-navigation-list">
+          <li>
+            <a class="active navigation-link" href="index.html">Studio </a>
+          </li>
+          <li>
+            <a class="active navigation-link" href="portfolio.html"
+              >Portfolio
+            </a>
+          </li>
+          <li>
+            <a class="active navigation-link" href="contacts.html">Contacts </a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="menu-company-contacts-list">
+        <li>
+          <a class="phone-number" href="tel:+1212-772-4150">
+            +1 212-772-4150
+          </a>
+        </li>
+        <li>
+          <a class="email active" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <div class="company-socials-list">
+        <a class="social-link" href="https://www.instagram.com/" target="_blank"
+          >Instagram
+        </a>
+        <svg width="1px" height="22px">
+          <use href="images/icons/icons.svg#icon-socials-dash-separator"></use>
+        </svg>
+        <a class="social-link" href="https://twitter.com/" target="_blank"
+          >Twitter
+        </a>
+        <svg width="1px" height="22px">
+          <use href="images/icons/icons.svg#icon-socials-dash-separator"></use>
+        </svg>
+        <a class="social-link" href="https://www.facebook.com/" target="_blank"
+          >Facebook
+        </a>
+        <svg width="1px" height="22px">
+          <use href="images/icons/icons.svg#icon-socials-dash-separator"></use>
+        </svg>
+        <a class="social-link" href="https://www.linkedin.com/" target="_blank"
+          >LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="modal-close-button active" type="button" data-modal-close>
+          <svg width="18px" height="18px">
+            <use href="images/icons/icons.svg#icon-modal-close_button"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <h2 class="form-heading">
+            Leave your information and we'll call you back
+          </h2>
+          <div class="form-group">
+            <label class="label-text" for="name">Name</label>
+            <div class="input-box-text-and-icon">
+              <input
+                class="input-text"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+              <svg width="18px" height="18px" class="input-icon">
+                <use href="./images/icons/icons.svg#icon-name_input"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="label-text" for="telephone">Telephone</label>
+            <div class="input-box-text-and-icon">
+              <input
+                class="input-text"
+                type="tel"
+                name="phone-number"
+                id="telephone"
+                required
+              />
+              <svg width="18px" height="18px" class="input-icon">
+                <use href="./images/icons/icons.svg#icon-phone_input"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="label-text" for="email">E-mail</label>
+            <div class="input-box-text-and-icon">
+              <input
+                class="input-text"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+              <svg width="18px" height="18px" class="input-icon">
+                <use href="./images/icons/icons.svg#icon-email_input"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="label-text" for="comments">Comments</label>
+            <textarea
+              class="textarea-text"
+              rows="6"
+              name="comments"
+              id="comments"
+              placeholder="Enter the text"
+            ></textarea>
+          </div>
+
+          <div class="form-group-checkbox">
+            <label class="checkbox-label">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                name="terms and conditions"
+                required
+              />
+              <svg width="16px" height="15px" class="checkbox-icon">
+                <use href="images/icons/icons.svg#icon-checkbox"></use>
+              </svg>
+              <svg width="16px" height="15px" class="checkbox-checked-icon">
+                <use href="images/icons/icons.svg#icon-checkbox-checked"></use>
+              </svg>
+              <p class="checkbox-label-text">
+                I agree with the letter and accept the
+                <span>
+                  <a href="https://goit.global/ro/" target="_blank"
+                    >Terms and Conditions
+                  </a>
+                </span>
+              </p>
+            </label>
+          </div>
+
+          <button class="button send-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
+  </body>
+</html>
