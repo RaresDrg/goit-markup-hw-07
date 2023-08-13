@@ -1077,11 +1077,11 @@ a {
 
   .global-footer-container {
     flex-direction: row;
-    gap: 7.9487%;
+    justify-content: space-between;
   }
 
   .global-footer-container .logo-and-address-plus-finds-us-container {
-    gap: 5.9829%;
+    flex-grow: 1;
   }
 
   .logo-and-address-plus-finds-us-container .logo-and-address,
@@ -1089,9 +1089,15 @@ a {
     align-items: flex-start;
   }
 
+
   .logo-and-address-plus-finds-us-container .finds-us-container,
   .global-footer-container .subscribe-form-container {
     margin-top: 12px;
+  }
+
+  .global-footer-container .subscribe-form-container {
+    flex-grow: 1;
+    align-items: end;
   }
 
   .logo-and-address-plus-finds-us-container .finds-us-container {
@@ -1103,9 +1109,12 @@ a {
     gap: 12px;
   }
 
-  .subscribe-form-container .subscribe-form-caption,
+  .subscribe-form-container .subscribe-form-caption {
+    align-self: center;
+  }
+  
   .subscribe-form .subscribe-button {
-    align-self: flex-start;
+    align-self: flex-end
   }
 
   /* Modal */
